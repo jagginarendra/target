@@ -27,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
                 break;
             }
         }
-        int totalTax = totalAmount / 4;
+        int totalTax = totalAmount / 2;
 
         return new Order(orderId, new Date(), totalAmount, totalTax);
     }
