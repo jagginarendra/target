@@ -20,7 +20,7 @@ public class SearchWebController {
     @GetMapping("/getOrder")
     public Order getOrder(@RequestParam String orderId) {
 
-        logger.info("OrderId received =" + orderId);
+        logger.info("OrderId received ===" + orderId);
 
         return orderService.getOrderById(orderId);
 
