@@ -14,7 +14,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Order getOrderById(String orderId) {
 
-        logger.info("returing order details for {}",orderId);
+        logger.info("returning order details for {}",orderId);
         return new Order(orderId,new Date(),5000,1500);
     }
 }
